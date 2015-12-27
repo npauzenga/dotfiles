@@ -1,14 +1,9 @@
+call plug#begin("~/.vim/plugin")
+  Plug 'ctrlpvim/ctrlp.vim'
+call plug#end()
 
-" An example for a vimrc file.
-"
-" Maintainer:	Bram Moolenaar <Bram@vim.org>
-" Last change:	2008 Dec 17
-"
-" To use it, copy it to
-"     for Unix and OS/2:  ~/.vimrc
-"	      for Amiga:  s:.vimrc
-"  for MS-DOS and Win32:  $VIM\_vimrc
-"	    for OpenVMS:  sys$login:.vimrc
+" config for CRTL P
+set runtimepath^=~/.vim/plugin/ctrlp.vim
 
 " When started as "evim", evim.vim will already have done these settings.
 if v:progname =~? "evim"
@@ -116,3 +111,8 @@ set tabstop=2
 set shiftwidth=2
 set shiftround
 set expandtab
+
+" Make CtrlP use ag for listing files.
+
+let g:ctrlp_user_command = 'ag %s -l --hidden --nocolor -g ""'
+let g:ctrlp_use_caching = 0
