@@ -104,7 +104,15 @@ syntax enable
 set background=dark
 colorscheme solarized
 
+" show numbers on left
 set number
 
+" set autobackup dir, perhaps disabling is better
 set backupdir=~/vimtmp,.
 set directory=~/vimtmp,.
+
+" Softtabs, 2 spaces
+set tabstop=2
+set shiftwidth=2
+set shiftround
+set expandtab
