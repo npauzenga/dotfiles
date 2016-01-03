@@ -1,18 +1,25 @@
-call plug#begin("~/.vim/plugin")
-  Plug 'ctrlpvim/ctrlp.vim'
-call plug#end()
+set nocompatible              " be iMproved, required
+filetype off                  " required
 
+" set the runtime path to include Vundle and initialize
+set runtimepath+=~/.vim/bundle/Vundle.vim
 " config for CRTL P
-set runtimepath^=~/.vim/plugin/ctrlp.vim
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+
+call vundle#begin()
+  Plugin 'tpope/vim-rails'
+  Plugin 'ctrlpvim/ctrlp.vim'
+  Plugin 'tpope/vim-sensible'
+  Plugin 'thoughtbot/vim-rspec'
+  Plugin 'VundleVim/Vundle.vim'
+call vundle#end()
+
+filetype plugin indent on
 
 " When started as "evim", evim.vim will already have done these settings.
 if v:progname =~? "evim"
   finish
 endif
-
-" Use Vim settings, rather than Vi settings (much better!).
-" This must be first, because it changes other options as a side effect.
-set nocompatible
 
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
@@ -26,9 +33,6 @@ set history=50		" keep 50 lines of command line history
 set ruler		" show the cursor position all the time
 set showcmd		" display incomplete commands
 set incsearch		" do incremental searching
-
-" For Win32 GUI: remove 't' flag from 'guioptions': no tearoff menu entries
-" let &guioptions = substitute(&guioptions, "t", "", "g")
 
 " Don't use Ex mode, use Q for formatting
 map Q gq
@@ -99,6 +103,9 @@ syntax enable
 set background=dark
 colorscheme solarized
 
+" highlight column 80
+set colorcolumn=80
+
 " show numbers on left
 set number
 
@@ -113,6 +120,16 @@ set shiftround
 set expandtab
 
 " Make CtrlP use ag for listing files.
-
 let g:ctrlp_user_command = 'ag %s -l --hidden --nocolor -g ""'
 let g:ctrlp_use_caching = 0
+
+" Remap 0 to first non-blank character in line
+map 0 ^
+
+let mapleader = ","
+
+" RSpec.vim mappings
+ map <Leader>t :call RunCurrentSpecFile()<CR>
+ map <Leader>s :call RunNearestSpec()<CR>
+ map <Leader>l :call RunLastSpec()<CR>
+ map <Leader>a :call RunAllSpecs()<CR>
