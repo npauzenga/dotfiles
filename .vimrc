@@ -123,8 +123,13 @@ set expandtab
 let g:ctrlp_user_command = 'ag %s -l --hidden --nocolor -g ""'
 let g:ctrlp_use_caching = 0
 
+""""""
+" Mappings
+"""""
+
 " Remap 0 to first non-blank character in line
 map 0 ^
+inoremap jj <ESC>
 
 let mapleader = ","
 
