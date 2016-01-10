@@ -6,10 +6,24 @@ set runtimepath+=~/.vim/bundle/Vundle.vim
 " config for CRTL P
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 
+""""""
+" Status Line
+"""""
+" show relative path
+set statusline+=%f
+" show column and row numbers
+set statusline+=%10((%l,%c)%)
+" show git branch via fugitive
+set statusline+=%=%{fugitive#statusline()}
+
+""""""
+" Plugins
+"""""
 call vundle#begin()
   Plugin 'tpope/vim-rails'
   Plugin 'ctrlpvim/ctrlp.vim'
   Plugin 'tpope/vim-sensible'
+  Plugin 'tpope/vim-fugitive'
   Plugin 'thoughtbot/vim-rspec'
   Plugin 'VundleVim/Vundle.vim'
 call vundle#end()
