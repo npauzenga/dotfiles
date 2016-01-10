@@ -1,2 +1,4 @@
 vim/plugin
 vim/bundle
+atom/blob-store
+atom/storage
