@@ -26,6 +26,10 @@ call vundle#begin()
   Plugin 'tpope/vim-fugitive'
   Plugin 'thoughtbot/vim-rspec'
   Plugin 'VundleVim/Vundle.vim'
+  Plugin 'garbas/vim-snipmate'
+  Plugin 'MarcWeber/vim-addon-mw-utils'
+  Plugin 'tomtom/tlib_vim'
+  Plugin 'honza/vim-snippets'
 call vundle#end()
 
 filetype plugin indent on

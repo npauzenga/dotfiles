@@ -2,3 +2,4 @@ vim/plugin
 vim/bundle
 atom/blob-store
 atom/storage
+atom/compile-cache
