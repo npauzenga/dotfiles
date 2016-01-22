@@ -30,6 +30,7 @@ call vundle#begin()
   Plugin 'MarcWeber/vim-addon-mw-utils'
   Plugin 'tomtom/tlib_vim'
   Plugin 'honza/vim-snippets'
+  Plugin 'tpope/vim-commentary'
 call vundle#end()
 
 filetype plugin indent on
