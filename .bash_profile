@@ -32,3 +32,6 @@ alias g='git'
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 if [[ $TMUX ]]; then source ~/.tmux-git/tmux-git.sh; fi
+
+# free-up CTRL-S for vim shortcut
+stty -ixon
