@@ -24,6 +24,7 @@ export PS1=$LIGHT_GRAY"\u"'$(
     else echo "'$CYAN'"$(__git_ps1 " (%s)")
     fi)'$BLUE" \W"$LIGHT_GRAY" $ "
 
+export EDITOR=vim
 alias ll='ls -lah'
 alias gg='git status -s'
 alias g='git'

@@ -1,7 +1,4 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
-let g:netrw_dirhist_1='/Users/nate/Documents/code/MeetMeeples/meet_meeples-server/app/interactors'
-let g:netrw_dirhist_2='/Users/nate/Documents/code/MeetMeeples/meet_meeples-server/spec/interactors'
-let g:netrw_dirhist_3='/Users/nate/Documents/code/MeetMeeples/meet_meeples-server/app/interactors'
-let g:netrw_dirhist_4='/Users/nate/Documents/code/MeetMeeples/meet_meeples-server/spec/interactors'
-let g:netrw_dirhist_5='/Users/nate/Documents/code/MeetMeeples/meet_meeples-server/app/interactors'
+let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_1='/Users/nate/.rvm/gems/ruby-2.2.3/gems/puma-2.15.3'
+let g:netrw_dirhist_2='/Users/nate/.rvm/gems/ruby-2.2.3/gems/pry-0.10.3'
