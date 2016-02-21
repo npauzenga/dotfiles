@@ -164,6 +164,7 @@ let mapleader = ","
 
 " paste automatically correct indentation
 map <Leader>p :set paste<CR>o<esc>"*]p:set nopaste<cr>
+map <Leader>h :nohlsearch<cr>
 
 " RSpec.vim mappings
 map <Leader>t :call RunCurrentSpecFile()<CR>
