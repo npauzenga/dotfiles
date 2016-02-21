@@ -127,6 +127,7 @@ set colorcolumn=80
 
 " show numbers on left
 set number
+set relativenumber
 
 " set autobackup dir, perhaps disabling is better
 set backupdir=~/vimtmp,.
