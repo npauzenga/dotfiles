@@ -20,6 +20,7 @@ set statusline+=%=%{fugitive#statusline()}
 " Plugins
 """""
 call vundle#begin()
+  Plugin 'valloric/YouCompleteMe'
   Plugin 'tpope/vim-rails'
   Plugin 'ctrlpvim/ctrlp.vim'
   Plugin 'tpope/vim-sensible'
