@@ -1,4 +1,5 @@
 vim/plugin
+vim/.netrwhist
 vim/bundle
 atom/blob-store
 atom/storage
